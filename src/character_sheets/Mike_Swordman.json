@@ -1,0 +1,96 @@
+{
+  "player_name": "Mike",
+  "character": {
+    "character_name": "Mike Swordman",
+    "ability_scores": {
+      "str": 17,
+      "dex": 16,
+      "con": 13,
+      "int": 8,
+      "wis": 5,
+      "cha": 11
+    },
+    "equipment": {
+      "weapons": [
+        {
+          "name": "Longsword",
+          "catagory": "martial",
+          "damage": "1d8",
+          "handedness": "one-handed",
+          "range": "melee",
+          "damage_type": "slashing",
+          "size": "medium",
+          "weight": 8,
+          "hardness": 10,
+          "hp": 5,
+          "equipped": true
+        }
+      ],
+      "armor": [
+        {
+          "name": "Chainmail",
+          "catagory": "medium armor",
+          "armor_bonus": 5,
+          "max_dex_bonus": 2,
+          "armor_check_penalty": -5,
+          "arcane_spell_failure_chance": 0.3,
+          "speed": {
+            "30 ft": 20,
+            "20 ft": 15
+          },
+          "weight": 40,
+          "equipped": true
+        },
+        {
+          "name": "Shield, light steel",
+          "catagory": "shield",
+          "armor_bonus": 1,
+          "armor_check_penalty": -5,
+          "arcane_spell_failure_chance": 0.3,
+          "weight": 6,
+          "equipped": true
+        }
+      ],
+      "misc": [
+        {
+          "name": "Hempen rope, 50 ft",
+          "quantity": 2,
+          "weight": 10
+        },
+        {
+          "name": "Artisan's tools (leatherworking)",
+          "quantity": 1,
+          "weight": 5
+        }
+      ],
+      "coins": {
+        "platinum": 2,
+        "gold": 17,
+        "silver": 5,
+        "copper": 3
+      }
+    },
+    "proficiencies": {
+      "weapons": [
+        "simple",
+        "martial"
+      ],
+      "armor": [
+        "light",
+        "medium",
+        "heavy"
+      ],
+      "tools": [
+        "leatherworking"
+      ],
+      "languages": [
+        "common",
+        "gnomish"
+      ]
+    }
+
+  }
+
+
+
+}

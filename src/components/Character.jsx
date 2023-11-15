@@ -1,6 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-
+import Attacks from './Attacks'
 
 
 function Character({ characterData }) {
@@ -12,6 +12,7 @@ function Character({ characterData }) {
             <div>
                 <h2>{`${characterData.player_name}'s Character: `}</h2>
                 <h1>{`${characterData.character.character_name}`}</h1>
+                <Attacks weapons={weapons} />
             </div>
         </>
     )

@@ -1,7 +1,12 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import Ability_Scores from './Ability_Scores'
 import Attacks from './Attacks'
-
+import Biography from './Biography'
+import Feats from './Feats'
+import Saves from './Saves'
+import Skills from './Skills'
+import Stats from './Stats'
 
 function Character({ characterData }) {
     const { character_name, ability_scores, equipment, proficiencies } = characterData.character
@@ -11,8 +16,13 @@ function Character({ characterData }) {
         <>
             <div>
                 <h2>{`${characterData.player_name}'s Character: `}</h2>
-                <h1>{`${characterData.character.character_name}`}</h1>
+                <Biography character_name={character_name} />
+                <Ability_Scores ability_scores={ability_scores} />
+                <Stats />
+                <Saves />
                 <Attacks weapons={weapons} />
+                <Feats />
+                <Skills />
             </div>
         </>
     )

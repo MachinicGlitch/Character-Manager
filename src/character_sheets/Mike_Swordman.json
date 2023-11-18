@@ -2,6 +2,7 @@
   "player_name": "Mike",
   "character": {
     "character_name": "Mike Swordman",
+    "description": {},
     "ability_scores": {
       "str": 17,
       "dex": 16,
@@ -10,6 +11,7 @@
       "wis": 5,
       "cha": 11
     },
+    "status": {},
     "equipment": {
       "weapons": [
         {
@@ -87,8 +89,53 @@
         "common",
         "gnomish"
       ]
-    }
-
+    },
+    "skill_ranks": {
+        "Appraise": 3,
+        "Balance": 3,
+        "Bluff": 3,
+        "Climb": 3,
+        "Concentration": 3,
+        "Craft": [
+          { "name": "woodcarving", "ranks": 3 },
+          { "name": "metalworking", "ranks": 3 }
+        ],
+        "Decipher Script": 3,
+        "Diplomacy": 3,
+        "Disable Device": 3,
+        "Disguise": 3,
+        "Escape Artist": 3,
+        "Forgery": 3,
+        "Gather Information": 3,
+        "Handle Animal": 3,
+        "Heal": 3,
+        "Hide": 3,
+        "Intimidate": 3,
+        "Jump": 3,
+        "Knowledge": [
+          { "name":  "nature", "ranks":  3 }
+        ],
+        "Listen": 3,
+        "Move Silently": 3,
+        "Open Lock": 3,
+        "Perform": [],
+        "Profession": [
+          { "name": "blacksmith", "ranks":  3 }
+        ],
+        "Ride": 3,
+        "Search": 3,
+        "Sense Motive": 3,
+        "Sleight Of Hand": 3,
+        "Speak Language": 3,
+        "Spellcraft": 3,
+        "Spot": 3,
+        "Survival": 3,
+        "Swim": 3,
+        "Tumble": 3,
+        "Use Magic Device": 3,
+        "Use Rope": 3
+    },
+    "feats": {}
   }
 
 

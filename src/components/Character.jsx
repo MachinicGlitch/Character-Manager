@@ -31,6 +31,25 @@ function Character({ characterData }) {
 
 
 
+// Defining shape for subskills (craft, knowledge, perform, profession)
+const subSkillShape = PropTypes.shape({
+    name: PropTypes.string.isRequired,
+    ranks: PropTypes.string.isRequired
+})
+
+//Defining shape for skills
+const skillRanksShape = Proptypes.shape({
+    Appraise: PropTypes.number,
+    Balance: PropTypes.number,
+    Bluff: PropTypes.number,
+    Climb: PropTypes.number,
+    Concentration: PropTypes.number,
+    Craft: PropTypes.arrayOf(subSkillShape),
+    DecipherScript: PropTypes.number,
+  // ... other skills
+})
+
+
 Character.propTypes = {
     characterData: PropTypes.shape({
         player_name: PropTypes.string.isRequired,
@@ -92,7 +111,8 @@ Character.propTypes = {
                 armor: PropTypes.arrayOf(PropTypes.string).isRequired,
                 tools: PropTypes.arrayOf(PropTypes.string).isRequired,
                 languages: PropTypes.arrayOf(PropTypes.string).isRequired
-            }).isRequired
+            }).isRequired,
+            skill_ranks: skillRanksShape.isRequired
         }).isRequired,
     }).isRequired,
 }

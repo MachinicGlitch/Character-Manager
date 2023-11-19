@@ -1,8 +1,9 @@
 {
   "player_name": "Mike",
   "character": {
-    "character_name": "Mike Swordman",
-    "description": {},
+    "description": {
+      "character_name": "Mike Swordman"
+    },
     "ability_scores": {
       "str": 17,
       "dex": 16,
@@ -11,7 +12,16 @@
       "wis": 5,
       "cha": 11
     },
-    "status": {},
+    "status": {
+      "max hp": 30,
+      "current hp": 27,
+      "temp hp": 4 
+    },
+    "saves": {
+      "reflex": 4,
+      "fortitude": 4,
+      "will":  2
+    },
     "equipment": {
       "weapons": [
         {
@@ -91,49 +101,49 @@
       ]
     },
     "skill_ranks": {
-        "Appraise": 3,
-        "Balance": 3,
-        "Bluff": 3,
-        "Climb": 3,
-        "Concentration": 3,
-        "Craft": [
+        "appraise": 3,
+        "balance": 3,
+        "bluff": 3,
+        "climb": 3,
+        "concentration": 3,
+        "craft": [
           { "name": "woodcarving", "ranks": 3 },
           { "name": "metalworking", "ranks": 3 }
         ],
-        "Decipher Script": 3,
-        "Diplomacy": 3,
-        "Disable Device": 3,
-        "Disguise": 3,
-        "Escape Artist": 3,
-        "Forgery": 3,
-        "Gather Information": 3,
-        "Handle Animal": 3,
-        "Heal": 3,
-        "Hide": 3,
-        "Intimidate": 3,
-        "Jump": 3,
-        "Knowledge": [
+        "decipher script": 3,
+        "diplomacy": 3,
+        "disable device": 3,
+        "disguise": 3,
+        "escape artist": 3,
+        "forgery": 3,
+        "gather information": 3,
+        "handle animal": 3,
+        "heal": 3,
+        "hide": 3,
+        "intimidate": 3,
+        "jump": 3,
+        "knowledge": [
           { "name":  "nature", "ranks":  3 }
         ],
-        "Listen": 3,
-        "Move Silently": 3,
-        "Open Lock": 3,
-        "Perform": [],
-        "Profession": [
+        "listen": 3,
+        "move silently": 3,
+        "open lock": 3,
+        "perform": [],
+        "profession": [
           { "name": "blacksmith", "ranks":  3 }
         ],
-        "Ride": 3,
-        "Search": 3,
-        "Sense Motive": 3,
-        "Sleight Of Hand": 3,
-        "Speak Language": 3,
-        "Spellcraft": 3,
-        "Spot": 3,
-        "Survival": 3,
-        "Swim": 3,
-        "Tumble": 3,
-        "Use Magic Device": 3,
-        "Use Rope": 3
+        "ride": 3,
+        "search": 3,
+        "sense motive": 3,
+        "sleight of hand": 3,
+        "speak language": 3,
+        "spellcraft": 3,
+        "spot": 3,
+        "survival": 3,
+        "swim": 3,
+        "tumble": 3,
+        "use magic device": 3,
+        "use rope": 3
     },
     "feats": {}
   }

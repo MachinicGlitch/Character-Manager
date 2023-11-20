@@ -2,8 +2,21 @@
   "player_name": "Mike",
   "character": {
     "description": {
-      "character_name": "Mike Swordman"
+      "character_name": "Mike Swordman",
+      "alginment": "True Neutral",
+      "deity": "None",
+      "race": "Human",
+      "size": "Medium",
+      "height": "6'0\"",
+      "weight": "220",
+      "hair": "brown",
+      "eyes": "green",
+      "age": 28,
+      "gender":  "male"
     },
+    "class": "fighter",
+    "level": 1,
+    "experience": 25,
     "ability_scores": {
       "str": 17,
       "dex": 16,
@@ -20,8 +33,9 @@
     "saves": {
       "reflex": 4,
       "fortitude": 4,
-      "will":  2
+      "will": 2
     },
+    "base attack bonus": 1,
     "equipment": {
       "weapons": [
         {

@@ -12,10 +12,30 @@
       "hair": "brown",
       "eyes": "green",
       "age": 28,
-      "gender":  "male"
+      "gender": "male"
     },
-    "class": "fighter",
-    "level": 1,
+    "character_levels": {
+      "level_1": "fighter",
+      "level_2": null,
+      "level_3": null,
+      "level_4": null,
+      "level_5": null,
+      "level_6": null,
+      "level_7": null,
+      "level_8": null,
+      "level_9": null,
+      "level_10": null,
+      "level_11": null,
+      "level_12": null,
+      "level_13": null,
+      "level_14": null,
+      "level_15": null,
+      "level_16": null,
+      "level_17": null,
+      "level_18": null,
+      "level_19": null,
+      "level_20": null
+    },
     "experience": 25,
     "ability_scores": {
       "str": 17,
@@ -26,16 +46,16 @@
       "cha": 11
     },
     "status": {
-      "max hp": 30,
-      "current hp": 27,
-      "temp hp": 4 
+      "max_hp": 30,
+      "current_hp": 27,
+      "temp_hp": 4
     },
     "saves": {
       "reflex": 4,
       "fortitude": 4,
       "will": 2
     },
-    "base attack bonus": 1,
+    "base_attack_bonus": 1,
     "equipment": {
       "weapons": [
         {

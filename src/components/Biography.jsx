@@ -5,6 +5,17 @@ function Biography({ description }) {
     return (
         <div>
             <h2>Description</h2>
+            <h2>{`${description.character_name}:`}</h2>
+            <p>{`${description.gender}`}</p>
+            <p>{`${description.race}`}</p>
+            <p>{`${description.size}`}</p>
+            <p>{`${description.age}`}</p>
+            <p>{`${description.height}`}</p>
+            <p>{`${description.weight}`}</p>
+            <p>{`${description.hair}`}</p>
+            <p>{`${description.eyes}`}</p>
+            <p>{`${description.alginment}`}</p>
+            <p>{`${description.deity}`}</p>
         </div>
     )
 }

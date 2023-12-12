@@ -144,14 +144,14 @@
           { "name": "woodcarving", "ranks": 3 },
           { "name": "metalworking", "ranks": 3 }
         ],
-        "decipher script": 3,
+        "decipher_script": 3,
         "diplomacy": 3,
-        "disable device": 3,
+        "disable_device": 3,
         "disguise": 3,
-        "escape artist": 3,
+        "escape_artist": 3,
         "forgery": 3,
-        "gather information": 3,
-        "handle animal": 3,
+        "gather_information": 3,
+        "handle_animal": 3,
         "heal": 3,
         "hide": 3,
         "intimidate": 3,
@@ -160,24 +160,24 @@
           { "name":  "nature", "ranks":  3 }
         ],
         "listen": 3,
-        "move silently": 3,
-        "open lock": 3,
+        "move_silently": 3,
+        "open_lock": 3,
         "perform": [],
         "profession": [
           { "name": "blacksmith", "ranks":  3 }
         ],
         "ride": 3,
         "search": 3,
-        "sense motive": 3,
-        "sleight of hand": 3,
-        "speak language": 3,
+        "sense_motive": 3,
+        "sleight_of_hand": 3,
+        "speak_language": 3,
         "spellcraft": 3,
         "spot": 3,
         "survival": 3,
         "swim": 3,
         "tumble": 3,
-        "use magic device": 3,
-        "use rope": 3
+        "use_magic_device": 3,
+        "use_rope": 3
     },
     "feats": {}
   }

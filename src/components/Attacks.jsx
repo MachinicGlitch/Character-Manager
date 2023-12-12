@@ -1,7 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-function Attacks({ weapons }) {
+function Attacks({ weapons, ability_modifiers }) {
     return (
         <div>
             <h2>Weapons</h2>
@@ -27,6 +27,16 @@ Attacks.propTypes = {
             weight: PropTypes.number.isRequired,
             damage_type: PropTypes.string.isRequired,
             equipped: PropTypes.bool.isRequired
+        })
+    ).isRequired,
+    ability_modifiers: PropTypes.arrayOf(
+        PropTypes.shape({
+            strMod: PropTypes.number.isRequired,
+            dexMod: PropTypes.number.isRequired,
+            conMod: PropTypes.number.isRequired,
+            intMod: PropTypes.number.isRequired,
+            wisMod: PropTypes.number.isRequired,
+            chaMod: PropTypes.number.isRequired
         })
     ).isRequired
 }

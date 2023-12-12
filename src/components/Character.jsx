@@ -12,22 +12,55 @@ function Character({ characterData }) {
     const { description, ability_scores, status, saves, equipment, proficiencies, skill_ranks } = characterData.character
     const { weapons } = equipment
 
+    const ability_modifiers = {
+        // TODO: factor in additional modifier sources
+        strMod: calculateAbilityModifier(ability_scores.str),
+        dexMod: calculateAbilityModifier(ability_scores.dex),
+        conMod: calculateAbilityModifier(ability_scores.con),
+        intMod: calculateAbilityModifier(ability_scores.int),
+        wisMod: calculateAbilityModifier(ability_scores.wis),
+        chaMod: calculateAbilityModifier(ability_scores.cha)
+    }
+
+
     return (
         <>
             <div>
                 <h2>{`${characterData.player_name}'s Character: `}</h2>
                 <Biography description={description} />
-                <Ability_Scores ability_scores={ability_scores} />
-                <Stats status={status} />
-                <Saves saves={saves} />
-                <Attacks weapons={weapons} />
+                <Ability_Scores
+                    ability_scores={ability_scores}
+                    ability_modifiers={ability_modifiers}
+                />
+                <Stats
+                    status={status}
+                    ability_modifiers={ability_modifiers}
+                />
+                <Saves
+                    saves={saves}
+                    ability_modifiers={ability_modifiers}
+                />
+                <Attacks
+                    weapons={weapons}
+                    ability_modifiers={ability_modifiers}
+                />
                 <Feats />
-                <Skills skill_ranks={skill_ranks} />
+                <Skills
+                    skill_ranks={skill_ranks}
+                    ability_modifiers={ability_modifiers}
+                />
             </div>
         </>
     )
 }
 
+
+
+
+const calculateAbilityModifier = (abilityScore) => {
+    // TODO: add additional temp/other factors
+    return Math.floor((abilityScore - 10) / 2)
+}
 
 
 
@@ -45,33 +78,33 @@ const skillRanksShape = PropTypes.shape({
     climb: PropTypes.number.isRequired,
     concentration: PropTypes.number.isRequired,
     craft: PropTypes.arrayOf(subSkillShape).isRequired,
-    'decipher script': PropTypes.number.isRequired,
+    decipher_script: PropTypes.number.isRequired,
     diplomacy: PropTypes.number.isRequired,
-    'disable device': PropTypes.number.isRequired,
+    disable_device: PropTypes.number.isRequired,
     disguise: PropTypes.number.isRequired,
-    'escape artist': PropTypes.number.isRequired,
+    escape_artist: PropTypes.number.isRequired,
     forgery: PropTypes.number.isRequired,
-    'gather information': PropTypes.number.isRequired,
-    'handle animal': PropTypes.number.isRequired,
+    gather_information: PropTypes.number.isRequired,
+    handle_animal: PropTypes.number.isRequired,
     heal: PropTypes.number.isRequired,
     intimidate: PropTypes.number.isRequired,
     jump: PropTypes.number.isRequired,
     knowledge: PropTypes.arrayOf(subSkillShape).isRequired,
     listen: PropTypes.number.isRequired,
-    'move silently': PropTypes.number.isRequired,
-    'open lock': PropTypes.number.isRequired,
+    move_silently: PropTypes.number.isRequired,
+    open_lock: PropTypes.number.isRequired,
     perform: PropTypes.arrayOf(subSkillShape).isRequired,
     profession: PropTypes.arrayOf(subSkillShape).isRequired,
     ride: PropTypes.number.isRequired,
     search: PropTypes.number.isRequired,
-    'sense motive': PropTypes.number.isRequired,
-    'sleight of hand': PropTypes.number.isRequired,
-    'speak language': PropTypes.number.isRequired,
+    sense_motive: PropTypes.number.isRequired,
+    sleight_of_hand: PropTypes.number.isRequired,
+    speak_language: PropTypes.number.isRequired,
     spellcraft: PropTypes.number.isRequired,
     swim: PropTypes.number.isRequired,
     tumble: PropTypes.number.isRequired,
-    'use magic device': PropTypes.number.isRequired,
-    'use rope': PropTypes.number.isRequired
+    use_magic_device: PropTypes.number.isRequired,
+    use_rope: PropTypes.number.isRequired
 })
 
 // Defining shape of imported character sheet
@@ -101,9 +134,9 @@ Character.propTypes = {
                 cha: PropTypes.number.isRequired,
             }).isRequired,
             status: PropTypes.shape({
-                'max hp': PropTypes.number.isRequired,
-                'current hp': PropTypes.number.isRequired,
-                'temp hp': PropTypes.number.isRequired
+                max_hp: PropTypes.number.isRequired,
+                current_hp: PropTypes.number.isRequired,
+                temp_hp: PropTypes.number.isRequired
             }),
             saves: PropTypes.shape({
                 reflex: PropTypes.number.isRequired,
